@@ -339,32 +339,106 @@ Verifying if we got the correct calculations lets plot everything in 3-Space:
 \label{fig:Plane_3D_worked_5}
 \end{figure}
 
+\subsubsection{Calculating distance between a point and a plane}
 
+Problem statement: Calculate the distance between a point and a plane. \\
 
+Given: \\
 
+$Z(2,5,10)$ \\
 
+$V_1: 2x-4y+2z=9$ \\
 
+Methodology: \\
 
+We use the distance formula denoted by: \\
 
+$d = \frac{Ax_0+By_0+Cz_0+D}{\sqrt{A^2+B^2+C^2}}$ \\
 
+$d = \frac{(2(2)-4(5)+2(10)-9)}{\sqrt{2^2+4^2+2^2}}$ \\
 
+$\therefore d = -1.02$ \\
 
+\subsubsection{Finding point-normal form of an equation passing passing via point and having a given normal}
 
+Problem statement: Find the point-normal form of an equation passing through a point and having a given normal. \\
 
+Given: \\
 
+$P(2,5,10)$ \\
 
+$\vec{v}  = (0,1,2)$ \\
 
+Methodology: \\ 
 
+Subsitute equation using the given structure: \\
 
+Using format $a(x - x_0) + b(y - y_0) + c(z - z_0) = 0$ \\
 
+$\therefore (y-5) + 2(z-10) = 0$ \\
 
+Our final equation is: \\ 
 
+$y+2z-25$ \\
 
+Our graph looks like this: \\
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{sketch-3d-6.png}
+\caption{3D Graph of $P=A \land y+2z-2$}
+\label{fig:Plane_3D_worked_6}
+\end{figure}
 
+\subsubsection{Finding parametric equations for intersecting planes}
 
+Problem statement: Find the parametric equations for intersecting planes. \\
 
+Consider:
 
+\[
+\begin{cases}
+V_1: 2x-4y+2z=9 \\
+V_2: 1x-3y+5z=24 \\
+\end{cases}
+\]
 
+In order to find our directional vector we need to find the intersection of the two planes. \\
 
+To get started we set $z=0$ \\
 
+Now we get a new system: \\
+
+\[
+\begin{cases}
+V_1: 2x-4y=9 \\
+V_2: 1x-3y=24 \\
+\end{cases}
+\]
+
+Solve for $x$ and $y$ \\
+
+$x = \frac{-69}{2} \land y = \frac{-39}{2}$ \\
+
+so our $\vec{r}$ positional vector is: \\
+
+$\vec{r} = (\frac{-69}{2},\frac{-39}{2},0)$ \\ 
+
+Now work out our directional vector/cross product of $V_1$ and $V_2$: \\
+
+our cross product is: \\
+
+$\begin{pmatrix}2&-4&2\end{pmatrix}\times \begin{pmatrix}1&-3&5\end{pmatrix}=\begin{pmatrix}-14&-8&-2\end{pmatrix}$ \\
+
+$\therefore$ our line can be described by: \\
+
+$L =  (\frac{-69}{2},\frac{-39}{2},0)+(-14,-8,-2)t$  \\
+
+Our graph looks like this: \\
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{sketch-3d-7.png}
+\caption{3D Graph of  $V_1 \land V_2 \land L = (\frac{-69}{2},\frac{-39}{2},0)+(-14,-8,-2)t$}
+\label{fig:Plane_3D_worked_7}
+\end{figure}
